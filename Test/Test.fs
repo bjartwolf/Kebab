@@ -1,9 +1,9 @@
 ﻿module TestKebab
 
-open NUnit.Framework
+open Xunit
 open FsCheck
 open System 
-open FsCheck.NUnit
+open FsCheck.Xunit
 open Kebab
 
 //[<Property>]
@@ -13,6 +13,10 @@ open Kebab
 //    bottom = Rod || bottom = Plate 
 
 [<Property>]
+let ``A shish is always vegetarian`` (kebab: shish<Bottom>) =
+    isVeg kebab 
+
+[<Property>]
 let ``A shish of bottoms bottom is always a  rod or plate`` (kebab: shish<Bottom>) =
     let bottom = WhatBottom kebab 
     bottom = Rod || bottom = Plate 
@@ -20,10 +24,13 @@ let ``A shish of bottoms bottom is always a  rod or plate`` (kebab: shish<Bottom
 [<Property>]
 let ``A shish should never have Onions on top of Lamb`` (kebab: shish<Bottom>) =
     let cleanBab = getRidOfOnions kebab
-    let rec hasOnionsOnLamb kebab = match kebab with
-        | Bottom _ -> false 
-        | Onion (Lamb (x)) -> true 
-        | Onion (x) -> hasOnionsOnLamb x 
-        | Lamb (x) -> hasOnionsOnLamb x 
-        | Tomato (x) -> hasOnionsOnLamb x 
+    let rec hasOnionsOnLamb kebab =
+        match kebab with
+            | Bottom _ -> false 
+            | Onion (Lamb (x)) -> true 
+            | Onion (x) -> hasOnionsOnLamb x 
+            | Lamb (x) -> hasOnionsOnLamb x 
+            | Tomato (x) -> hasOnionsOnLamb x
+            | Corn x -> hasOnionsOnLamb x
     not (hasOnionsOnLamb cleanBab)
+
