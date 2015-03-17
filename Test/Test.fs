@@ -15,11 +15,12 @@ open Kebab
 [<Property>]
 let ``A shish is always vegetarian`` (kebab: shish<Bottom>) =
     isVeg kebab 
-
+ 
 [<Property>]
-let ``A shish of bottoms bottom is always a  rod or plate`` (kebab: shish<Bottom>) =
-    let bottom = WhatBottom kebab 
-    bottom = Rod || bottom = Plate 
+let ``A shish is always served on expensive plates`` (kebab: shish<Bottom>) =
+    (getValueOfBottom (WhatBottom kebab)) < 50
+
+
 
 [<Property>]
 let ``A shish should never have Onions on top of Lamb`` (kebab: shish<Bottom>) =

@@ -1,14 +1,19 @@
 ﻿module Kebab
 
-type Rod = Dagger  | Sword  | Fork 
-type Plate = GoldPlate | SilverPlate  | BronzePlate 
-type Bottom = Rod | Plate 
+type rod = Dagger  | Sword  | Fork 
+type plate = GoldPlate of int | SilverPlate  | BronzePlate 
+type Bottom = Rod of rod | Plate of plate
 type shish<'α> =
     Bottom of 'α 
     | Onion of shish<'α>
     | Lamb of shish<'α>
     | Tomato of shish<'α>
     | Corn of shish<'α>
+
+let getValueOfBottom bottom = 
+    match bottom with 
+        | Plate (GoldPlate x) -> x
+        | _ -> 0
 
 let rec getRidOfOnions kebab =
     match kebab with 
