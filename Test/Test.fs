@@ -20,6 +20,13 @@ let ``A shish is always vegetarian`` (kebab: shish<Bottom>) =
 let ``A shish is always served on expensive plates`` (kebab: shish<Bottom>) =
     (getValueOfBottom (WhatBottom kebab)) < 50
 
+[<Property>]
+let ``Doubleflipped trees are equal to themselves`` (t: tree) =
+    flip (flip t) = t
+
+[<Property>]
+let ``Eating pears does not change a tree if it doesn't have pears`` (t: tree) =
+    if (hasPear t) then not (eatPear t = t) else eatPear t = t
 
 
 [<Property>]

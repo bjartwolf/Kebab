@@ -14,6 +14,7 @@ let bar (kebab: shish<Bottom>) =
             | Onion (x) -> hasOnionsOnLamb x 
             | Lamb (x) -> hasOnionsOnLamb x 
             | Tomato (x) -> hasOnionsOnLamb x 
+            | Corn (x) -> hasOnionsOnLamb x
     not (hasOnionsOnLamb cleanBab)
 
 let foo = FsCheck.Check.Quick bar
@@ -22,7 +23,9 @@ let foo = FsCheck.Check.Quick bar
 let main argv = 
     let aBab = Onion(Tomato (Onion(Bottom GoldPlate)))
     let anotherBab = Onion(Lamb(Onion(Tomato(Bottom 53))))
+    let tree = flip(Split (Bud, LeftFruit(Some Fig, Bud)))
     Console.WriteLine (sprintf "%A" foo)
     Console.WriteLine (sprintf "%A" aBab)
+    Console.WriteLine (sprintf "%A" tree)
     Console.ReadLine() |> ignore
     0 // return an integer exit code
