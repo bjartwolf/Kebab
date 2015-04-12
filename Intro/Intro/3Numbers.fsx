@@ -15,3 +15,11 @@ two
 
 //Are there more nums than bools?
 //Are there more nums than positive ints?
+
+
+// What are these things?
+type boolnum = Zero of bool | OneMoreThan of boolnum
+Zero true
+
+type intnum = Zero of int | OneMoreThan of intnum
+Zero 0
