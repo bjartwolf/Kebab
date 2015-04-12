@@ -30,7 +30,7 @@ Target "BuildTest" (fun _ ->
 
 Target "XUnitTest" (fun _ ->  
     !! (testDir + "Trees.Test.dll")
-        |> xUnit (fun p -> {p with OutputDir = testDir; Verbose=true; HtmlOutput=true})
+        |> xUnit (fun p -> {p with OutputDir = testDir})
 )
 
 // Build order
