@@ -40,6 +40,5 @@ Target "XUnitTest" (fun _ ->
   ==> "XUnitTest"
 
 // start build
-//RunTargetOrDefault "XUnitTest"
-RunTargetOrDefault "Clean"
+RunTargetOrDefault "XUnitTest"
 
