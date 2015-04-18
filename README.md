@@ -8,12 +8,12 @@ http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 ![image](https://mitpress.mit.edu/sites/default/files/9780262561143.jpg)
 
-The workshop is distributed in a VM OWA 1.0 format, that can be imported into VirtualBox on 
-The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova)
+The workshop is distributed in a 32-bit Ubuntu VM OWA 1.0 format, that can be imported into VirtualBox on 
+The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova). The reason for running it on Ubuntu is that it can be distributed without licenses restricting its use. 
 
 The assignments are designed to work both in Visual Studio and MonoDevelop. The reason they are set up with Ubunut and Mono is that it allows for free distribution of the virtual machines.
 
-If the machine runs slow, or Mono autocompletion is slow, try to allocate more CPUs, RAM, Video RAM etc to the machine. Maybe it helps. 
+If the machine runs slow, or Mono autocompletion is slow, try to allocate more CPUs, RAM, Video RAM etc to the machine. Maybe it helps.
 
 The password and username is smarf and smarf. 
 
