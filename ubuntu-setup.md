@@ -5,9 +5,4 @@ In terminal:
     sudo apt-get update
     sudo apt-get install mono-complete fsharp monodevelop monodevelop-nunit git
     git clone https://github.com/bjartwolf/Kebab.git
-
-
-
-In ``monodevelop``, go to *Tools, Add-in Manager, Gallery* and install:
-* F# Language Binding
-* xUnit.NET testing framework support
+    mdtool setup install MonoDevelop.XUnit.XUnit MonoDevelop.FSharpBinding
