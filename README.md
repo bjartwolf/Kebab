@@ -9,7 +9,7 @@ http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 ![image](https://mitpress.mit.edu/sites/default/files/9780262561143.jpg)
 
 The workshop is distributed in a VM OWA 1.0 format, that can be imported into VirtualBox on 
-The VM can be downloaded from 
+The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](Download OWA)
 
 The assignments are designed to work both in Visual Studio and MonoDevelop. The reason they are set up with Ubunut and Mono is that it allows for free distribution of the virtual machines.
 
