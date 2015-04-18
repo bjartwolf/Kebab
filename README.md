@@ -1,7 +1,7 @@
 # Kebab
 Little ML'er in F#
 
-Planning to use this for a workshop
+Planning to use this for a [workshop at flatmap 2015](http://2015.flatmap.no/bjartnes.html#session)
 
 You should buy the book
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
