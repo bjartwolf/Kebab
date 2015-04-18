@@ -28,11 +28,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AssemblyInfo.fs" />
-    <None Include="1.fsx" />
-    <None Include="2.fsx" />
-    <None Include="3Numbers.fsx" />
-    <None Include="4Shapes.fsx" />
-    <None Include="5Matching.fsx" />
+    <None Include="1. Types of only one.fsx" />
+    <None Include="2. Types with two things.fsx" />
+    <None Include="3. Numbers.fsx" />
+    <None Include="4. Shapes.fsx" />
+    <None Include="5. Matching.fsx" />
     <None Include="6. stars.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
