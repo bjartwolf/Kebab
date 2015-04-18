@@ -4,7 +4,7 @@ The reason for its name might become more clear if you do some of the exercices 
 
 Planning to use this for a [workshop at flatmap 2015](http://2015.flatmap.no/bjartnes.html#session)
 
-You should buy the book
+The exercies are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 ![image](https://mitpress.mit.edu/sites/default/files/9780262561143.jpg)
