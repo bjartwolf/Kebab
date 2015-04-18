@@ -24,7 +24,7 @@ The box also comes with the [http://www.fsharpworkshop.com/](http://www.fsharpwo
 
 ## Intro
 
-Open the intro solution. This part is just scripts and is meant to be evaluated and played with in FSI. Send a line to FSI using CTRL+ENTER in MonoDevelop. There is no feedback on right and wrong, as an instructor or ask @jonaswinje, @einarwh or @bjartnes or someone else on Twitter if  you are not sure, or create a GitHub issue or something. The assignments are a bit open on purpose. We want you to play with the concepts.
+Open the intro solution. This part is just scripts and is meant to be evaluated and played with in FSI. Send a line to FSI using CTRL+ENTER in MonoDevelop. There is no feedback on right and wrong, ask an instructor or ask @jonaswinje, @einarwh or @bjartnes or someone else on Twitter if  you are not sure, or create a GitHub issue or something. The assignments are a bit open on purpose. We want you to play with the concepts.
 
 ## Trees
 
