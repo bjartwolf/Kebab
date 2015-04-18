@@ -1,5 +1,6 @@
 # Kebab
-Little ML'er in F#
+Little ML'er in F# - a workshop.
+The reason for its name might become more clear if you do some of the exercices and/or read the book.
 
 Planning to use this for a [workshop at flatmap 2015](http://2015.flatmap.no/bjartnes.html#session)
 
