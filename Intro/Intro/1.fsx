@@ -14,4 +14,4 @@ salts
 
 // Try to make something like this work
 // let b = [Pepper; Pepper] 
-// try to mix salt and pepper in a list and see what happens
+// try to mix salt and pepper in a list and see what happens (it is supposed not to work)
