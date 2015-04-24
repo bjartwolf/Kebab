@@ -1,5 +1,4 @@
-﻿// reset fsi by rightcliking in the F# Interactive and click reset to make sure you get rid of the old definitions..._
-// Why am I a shape?
+﻿// reset fsi by rightcliking in the F# Interactive and click reset to make sure you get rid of the old definitions...
 type num<'A>  = Zero of 'A | OneMoreThan of num<'A>
 
 
