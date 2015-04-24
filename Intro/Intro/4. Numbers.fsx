@@ -16,6 +16,12 @@ two
 //Are there more nums than bools?
 //Are there more nums than positive ints?
 
+// functions from recursive types tend to be recursive
+let rec plus a b = match a with
+                       | Zero -> b
+                       | OneMoreThan n -> OneMoreThan (plus n b)
+
+plus two two
 
 // What are these things?
 type boolnum = Zero of bool | OneMoreThan of boolnum

@@ -9,15 +9,14 @@ let rec getRidOfOnions kebab =
 
 getRidOfOnions (Onion (Lamb (Onion (Skewer))))
 
-// Lage noe som legger tomater over løk istedenfor. Eller bytter ut Lamb med Tomater
+// Make a function that puts tomatoes on top of onsions instead. Or replaces Lamb with Tomato.
 
-// Lag noe som teller tomater - en funksjon fra kebab til int
+// Make a function that counts tomatoes -- a function from kebab to int
 
-// active patters - bruk denne til å matche på..!
+// active patterns
 let (|Vegetable|Meat|Thing|) input = 
         match input with 
                 | Onion x -> Vegetable x
                 | Lamb x-> Meat x
                 | Skewer -> Thing
                 | Tomato x-> Vegetable x
-
