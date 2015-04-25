@@ -19,3 +19,4 @@ let salty f = match f with
                   | SeaWater -> true
 
 salty (Carrots 2)
+
