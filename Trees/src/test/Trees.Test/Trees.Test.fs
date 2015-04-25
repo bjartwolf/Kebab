@@ -20,3 +20,8 @@ let ``Flipped unsymmetric tree is different from self`` () =
 [<Property(Verbose=true)>]
 let ``Eating pears does not change a tree if it doesn't have pears`` (t: tree) =
     if (hasPear t) then not (eatPear t = t) else eatPear t = t
+
+[<Property(Verbose=true)>]
+let ``Flipped unsymmetric tree is not equal to self`` (f: fruit) =
+    let t = LeftFruit (Some f, Bud)
+    not (t = flip t)
