@@ -15,8 +15,10 @@ Carrots 2
 let salty f = match f with
                   | Meat Salt -> true
                   | Meat Pepper -> false
-                  | Carrots _ -> false
+                  | Carrots _ -> true
                   | SeaWater -> true
 
 salty (Carrots 2)
 
+// Potato chips is also salty food. Add some.
+// Or maybe make some SeasonedCarrots - if you season them with salt they are probably salty too...

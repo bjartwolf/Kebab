@@ -19,6 +19,7 @@ let salty s = match s with
                   | Salt -> true
 
 salty Salt
+// What is the function salty a function from and to? Can you make it a function to an int or a string?
 
 // Try to make something like this work
 // let b = [Pepper; Pepper] 

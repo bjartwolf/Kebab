@@ -20,3 +20,7 @@ let (|Vegetable|Meat|Thing|) input =
                 | Lamb x-> Meat x
                 | Skewer -> Thing
                 | Tomato x-> Vegetable x
+
+// make a function isVeg from kebab to bool that checks is things are vegetarian matching on the Vegetable, Things and Meat
+// see if you can add some more types of vegetables to the kebab - without changing your isVeg function?
+
