@@ -18,6 +18,7 @@ Restart/login again or something
     docker images
 
 ## Start the docker images
+Look for the right containername (this could be done automatic, maybe from a Docker build task?)
     docker run -i -p 127.0.0.1:50000:50000 595f9e8e217b
 
 ## Profit
