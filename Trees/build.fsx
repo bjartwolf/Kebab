@@ -33,11 +33,17 @@ Target "XUnitTest" (fun _ ->
         |> xUnit (fun p -> {p with OutputDir = testDir})
 )
 
+Target "Docker" (fun _ ->  
+        let errorcode = Shell.Exec("docker", "build .")
+        trace (sprintf "Docker image %i" errorcode)
+)
+
 // Build order
 "Clean"
   ==> "BuildApp"
   ==> "BuildTest"
   ==> "XUnitTest"
+  ==> "Docker"
 
 // start build
-RunTargetOrDefault "XUnitTest"
+RunTargetOrDefault "Docker"

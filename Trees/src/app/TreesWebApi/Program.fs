@@ -4,7 +4,7 @@ open Microsoft.Owin.Hosting
 [<EntryPoint>]
 let main argv = 
 
-    let baseAddress = "http://localhost:8888"
+    let baseAddress = "http://*:50000"
 
     use application = WebApp.Start<Startup.Startup>(baseAddress)
 
