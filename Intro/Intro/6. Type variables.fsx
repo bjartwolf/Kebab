@@ -1,4 +1,7 @@
-﻿// reset fsi by rightcliking in the F# Interactive and click reset to make sure you get rid of the old definitions...
+﻿// ctrl+enter to send line or selection to fsi/repl
+// reset fsi by rightcliking in the F# Interactive and click reset
+
+
 type num<'A>  = Zero of 'A | OneMoreThan of num<'A>
 
 

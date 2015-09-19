@@ -1,17 +1,28 @@
-﻿type num = Zero | OneMoreThan of num
+﻿// ctrl+enter to send line or selection to fsi/repl
+// reset fsi by rightcliking in the F# Interactive and click reset
+
+
+// (boilerplatey)
+exception Nope
+let wa _ = raise Nope
+let t = ()
+
+// meep:
+
+type num = Zero | OneMoreThan of num
 
 Zero // what is my type?
 let a = Zero
 OneMoreThan Zero // and mytype)?
-let two = (OneMoreThan (OneMoreThan Zero))
+let two = OneMoreThan (OneMoreThan Zero)
 two
 
-// make five with num!
+// make five with Zero and OneMoreThan
 // let five = 
 // what is the type of five?
 
 // What is the difference between Zero and 0
-0 // what is my type?
+0 // what is the type of 0?
 
 //Are there more nums than bools?
 //Are there more nums than positive ints?
@@ -23,20 +34,17 @@ let rec plus a b = match a with
 
 plus two two
 
-let rec mult a b = match a with
-                       | Zero -> Zero
-                       | OneMoreThan n -> plus b (mult n b)
+
+// replace (wa t) with stuff to make a multiplication-function
+let rec mult a b : num = match a with
+                             | Zero -> (wa t)
+                             | OneMoreThan n -> (wa t)
 
 mult (plus two two) two
 
 // What is the same in the definition of plus and mult?
 // What is different?
 // Can we make a function with the samey parts in it?
-
-// (boilerplatey)
-exception Nope
-let wa _ = raise Nope
-let t = ()
 
 let rec numberwang z omt n = match n with
                                  | Zero -> z

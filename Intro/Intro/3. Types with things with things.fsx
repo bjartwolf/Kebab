@@ -1,9 +1,15 @@
-﻿type seasoning = Salt | Pepper
+﻿// ctrl+enter to send line or selection to fsi/repl
+// reset fsi by rightcliking in the F# Interactive and click reset
+
+type seasoning = Salt | Pepper
 
 // Meat is not food without seasoning. Carrots is not food without a number of them.
 type food = Meat of seasoning
           | Carrots of int
           | SeaWater
+// Meat, Carrots and SeaWater are food's constructors
+// Meat needs an argument of seasoning to construct a value of type food
+// Carrots needs an argument of int to construct a value of type food
 
 Meat
 Carrots

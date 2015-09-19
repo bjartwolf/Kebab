@@ -1,8 +1,12 @@
-﻿// Mark the things you want to run and press CTRL+RETURN
+﻿// ctrl+enter to send line or selection to fsi/repl
+// reset fsi by rightcliking in the F# Interactive and click reset
+
 
 // Defining a type in F#
 
-type salt = Salt // must have capital letter
+type salt = Salt
+// "salt" is the name of the type
+// "Salt" is the name of salt's constructor
 
 // makings stuff with the type
 let a = Salt

@@ -1,4 +1,8 @@
-﻿type kebab = Skewer | Onion of kebab | Lamb of kebab | Tomato of kebab
+﻿// ctrl+enter to send line or selection to fsi/repl
+// reset fsi by rightcliking in the F# Interactive and click reset
+
+
+type kebab = Skewer | Onion of kebab | Lamb of kebab | Tomato of kebab
 
 let rec getRidOfOnions kebab =
     match kebab with 
