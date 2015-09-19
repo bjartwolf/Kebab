@@ -23,7 +23,33 @@ let rec plus a b = match a with
 
 plus two two
 
-// What are these things?
+let rec mult a b = match a with
+                       | Zero -> Zero
+                       | OneMoreThan n -> plus b (mult n b)
+
+mult (plus two two) two
+
+// What is the same in the definition of plus and mult?
+// What is different?
+// Can we make a function with the samey parts in it?
+
+// (boilerplatey)
+exception Nope
+let wa _ = raise Nope
+let t = ()
+
+let rec numberwang z omt n = match n with
+                                 | Zero -> z
+                                 | OneMoreThan n -> omt (numberwang z omt n)
+
+let plus' a b : num  = numberwang (wa t) (wa t) a
+plus' two two
+
+let mult' a b : num = numberwang (wa t) (wa t) a
+mult' (plus two two) two
+
+
+// (What are these things?)
 type boolnum = Zero of bool | OneMoreThan of boolnum
 Zero true
 

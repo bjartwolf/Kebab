@@ -15,7 +15,7 @@ Carrots 2
 let salty f = match f with
                   | Meat Salt -> true
                   | Meat Pepper -> false
-                  | Carrots _ -> true
+                  | Carrots _ -> false
                   | SeaWater -> true
 
 salty (Carrots 2)
