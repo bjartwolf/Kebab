@@ -35,6 +35,8 @@
     <None Include="5. Numbers.fsx" />
     <None Include="6. Type variables.fsx" />
     <None Include="7. Matching.fsx" />
+    <None Include="Queens.fsx" />
+    <None Include="SeasoningAndStrings.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
