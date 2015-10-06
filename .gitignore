@@ -14,6 +14,7 @@ tools
 x64/
 build/
 bld/
+.fake/
 testoutput/
 [Bb]in/
 [Oo]bj/
