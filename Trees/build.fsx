@@ -3,6 +3,7 @@
 
 open Fake
 open Fake.Testing
+open Fake.DotCover
 
 RestorePackages()
 // Directories
@@ -36,6 +37,14 @@ Target "XUnitTest" (fun _ ->
         |> xUnit2 (fun p -> p)
 )
 
+Target "Cover" (fun _ ->  
+//    !! (testDir + "Trees.Test.dll")
+     printfn "%A" DotCoverDefaults
+     DotCover (fun _ -> { DotCoverDefaults with 
+                              TargetExecutable = @"tools\xunit.runner.console.2.1.0\tools\xunit.console.exe";
+                              TargetArguments = @"..\Trees\testoutput\Trees.Test.dll";
+                              WorkingDir = "" }))
+
 Target "Docker" (fun _ ->  
         let errorcode = Shell.Exec("docker", "build .")
         trace (sprintf "Docker image %i" errorcode)
@@ -45,8 +54,9 @@ Target "Docker" (fun _ ->
 "Clean"
   ==> "BuildApp"
   ==> "BuildTest"
-  ==> "XUnitTest"
+//  ==> "XUnitTest"
+  ==> "Cover"
   ==> "Docker"
 
 // start build
-RunTargetOrDefault "XUnitTest"
+RunTargetOrDefault "Cover"
