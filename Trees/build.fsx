@@ -41,7 +41,7 @@ Target "Cover" (fun _ ->
 //    !! (testDir + "Trees.Test.dll")
      DotCover (fun _ -> { DotCoverDefaults with 
                               TargetExecutable = @"tools\xunit.runner.console.2.1.0\tools\xunit.console.exe";
-                              TargetArguments = @".\testoutput\Trees.Test.dll";
+                              TargetArguments = testDir + "Trees.Test.dll";
                               WorkingDir = "" }))
 
 Target "Docker" (fun _ ->  
