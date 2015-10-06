@@ -38,11 +38,10 @@ Target "XUnitTest" (fun _ ->
 )
 
 Target "Cover" (fun _ ->  
-//    !! (testDir + "Trees.Test.dll")
-     DotCover (fun _ -> { DotCoverDefaults with 
-                              TargetExecutable = @"tools\xunit.runner.console.2.1.0\tools\xunit.console.exe";
-                              TargetArguments = testDir + "Trees.Test.dll";
-                              WorkingDir = "" }))
+    !! (testDir + "Trees.Test.dll")
+     |> DotCoverXUnit2 
+             (fun dotCoverOptions ->  dotCoverOptions ) 
+             (fun xUnit2Options ->  xUnit2Options ))
 
 Target "Docker" (fun _ ->  
         let errorcode = Shell.Exec("docker", "build .")
