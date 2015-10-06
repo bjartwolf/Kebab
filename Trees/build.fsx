@@ -2,6 +2,7 @@
 #r "tools/FAKE/tools/FakeLib.dll"
 
 open Fake
+open Fake.Testing
 
 RestorePackages()
 // Directories
@@ -12,6 +13,8 @@ let testDir   = "./test/"
 let appReferences  = !! "src/app/**/*.fsproj"
 
 let testReferences = !! "src/test/**/*.fsproj"
+
+".nuget/packages.config" |> RestorePackage (fun p -> { p with OutputPath = "tools" } )
 
 // Targets
 Target "Clean" (fun _ -> 
@@ -30,7 +33,7 @@ Target "BuildTest" (fun _ ->
 
 Target "XUnitTest" (fun _ ->  
     !! (testDir + "Trees.Test.dll")
-        |> xUnit (fun p -> {p with OutputDir = testDir})
+        |> xUnit2 (fun p -> p)
 )
 
 Target "Docker" (fun _ ->  
@@ -46,4 +49,4 @@ Target "Docker" (fun _ ->
   ==> "Docker"
 
 // start build
-RunTargetOrDefault "Docker"
+RunTargetOrDefault "XUnitTest"
