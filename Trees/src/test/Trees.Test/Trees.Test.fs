@@ -7,10 +7,10 @@ open Xunit
 let ``Doubleflipped trees are equal to themselves`` (t: tree) =
     flip (flip t) = t
 
-//[<Fact>]
-//let ``Flipped unsymmetric tree is different from self`` () =
-//    let tree = LeftFruit(Some Pear, Bud)
-//    flip tree |> should not' (equal tree)
+[<Fact>]
+let ``Flipped unsymmetric tree is different from self`` () =
+    let tree = LeftFruit(Some Pear, Bud)
+    not(flip tree = tree)
 
 
 [<Fact>]

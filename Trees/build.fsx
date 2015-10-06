@@ -7,7 +7,7 @@ open Fake.Testing
 RestorePackages()
 // Directories
 let buildDir  = "./build/"
-let testDir   = "./test/"
+let testDir   = "./testoutput/"
 
 // Filesets
 let appReferences  = !! "src/app/**/*.fsproj"
