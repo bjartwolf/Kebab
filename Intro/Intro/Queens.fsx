@@ -1,5 +1,4 @@
-﻿
-exception Nope
+﻿exception Nope
 let wa _ = raise Nope
 let t = ()
 
