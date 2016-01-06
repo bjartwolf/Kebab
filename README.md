@@ -2,7 +2,7 @@
 Little ML'er in F# - a workshop.
 The reason for its name might become more clear if you do some of the exercices and/or read the book.
 
-Planning to use this for a [workshop at flatmap 2015](http://2015.flatmap.no/bjartnes.html#session)
+Used for workshops at flatMap(Oslo) and some universities and meetups...
 
 The exercies are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
@@ -33,7 +33,3 @@ Open the intro solution. This part is just scripts and is meant to be evaluated 
 ## Trees
 
 This solution is a bit more like a traditional .NET project and is compiled and tested either using the build-script or using CTRL+T in MonoDevelop to run tests. It includes property-based testing and more complex types.
-
-
-
-
