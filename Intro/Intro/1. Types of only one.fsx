@@ -1,5 +1,5 @@
-﻿// ctrl+enter to send line or selection to fsi/repl
-// reset fsi by rightcliking in the F# Interactive and click reset
+﻿// alt + enter to send line or selection to fsi/repl
+// Reset fsi by clicking on "Kill Terminal" (the garbage can icon) in the VS Code terminal
 
 
 // Defining a type in F#
@@ -17,12 +17,12 @@ let moarsalts:salt list = [a;c]
 salts
 
 
-
-// a function from salt is roughly as interesting as the type
+// A function from salt is roughly as interesting as the type
 let salty s = match s with
                   | Salt -> true
 
 salty Salt
+
 // What is the function salty a function from and to? Can you make it a function to an int or a string?
 
 // Try to make something like this work

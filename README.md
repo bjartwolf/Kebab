@@ -1,4 +1,6 @@
-# Kebab
+# Kebabs with VSCode
+The Visual Studio Code (VSCode) version of the original [Kebab workshop](https://github.com/bjartwolf/Kebab)
+
 Little ML'er in F# - a workshop.
 The reason for its name might become more clear if you do some of the exercices and/or read the book.
 
@@ -11,16 +13,28 @@ http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 # Setup
 
-The assignments are designed to work both in Visual Studio and MonoDevelop.
+The workshop will be given i Visual Studio Code, but the excercises will work in both Visual Studio and MonoDevelop as well.
+
+## TODO Using the Virtual Machine
+
+The simplest way to get started with the workshop, is to use the pre-prepared viritual machine.
 
 The workshop is distributed in a 32-bit Ubuntu VM OWA 1.0 format, that can be imported into VirtualBox: 
 * The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova).
 * The password and username is **smarf** and **smarf**.
 * If the machine runs slow, or Mono autocompletion is slow, try to allocate more CPUs, RAM, Video RAM etc to the machine. Maybe it helps.
  
-Or, if you have your own Ubuntu or similar, you can try to set it up [like so](ubuntu-setup.md).
+## Manual Setup
 
-Or if you have a Visual Studio, can probably open solution files in there.
+If you don't want to use a viritual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
+Follow the F# Software Foundation's installation guide for [linux](http://fsharp.org/use/linux/), [mac](http://fsharp.org/use/mac/) or [windows](http://fsharp.org/use/windows/).
+
+### Getting wierd F#-output in VSCode?
+
+Ionide has a known bug, that can cause weird output in the F# terminal on some installations.
+If you experience this, include the following in your VS Code settings file:
+
+    "terminal.integrated.flowControl": false
 
 # Exercises
 
