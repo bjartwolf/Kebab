@@ -2,22 +2,22 @@
 The Visual Studio Code (VSCode) version of the original [Kebab workshop](https://github.com/bjartwolf/Kebab)
 
 Little ML'er in F# - a workshop.
-The reason for its name might become more clear if you do some of the exercices and/or read the book.
+The reason for its name might become more clear if you do some of the exercises and/or read the book.
 
 Used for workshops at flatMap(Oslo) and some universities and meetups...
 
-The exercies are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
+The exercises are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 ![image](https://mitpress.mit.edu/sites/default/files/9780262561143.jpg)
 
 # Setup
 
-The workshop will be given i Visual Studio Code, but the excercises will work in both Visual Studio and MonoDevelop as well.
+The workshop will be given i Visual Studio Code, but the exercises will work in both Visual Studio and MonoDevelop as well.
 
 ## TODO Using the Virtual Machine
 
-The simplest way to get started with the workshop, is to use the pre-prepared viritual machine.
+The simplest way to get started with the workshop, is to use the pre-prepared virtual machine.
 
 The workshop is distributed in a 32-bit Ubuntu VM OWA 1.0 format, that can be imported into VirtualBox: 
 * The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova).
@@ -26,7 +26,7 @@ The workshop is distributed in a 32-bit Ubuntu VM OWA 1.0 format, that can be im
  
 ## Manual Setup
 
-If you don't want to use a viritual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
+If you don't want to use a virtual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
 Follow the F# Software Foundation's installation guide for [linux](http://fsharp.org/use/linux/), [mac](http://fsharp.org/use/mac/) or [windows](http://fsharp.org/use/windows/).
 
 ### Getting wierd F#-output in VSCode?
@@ -38,7 +38,7 @@ If you experience this, include the following in your VS Code settings file:
 
 # Exercises
 
-The box also comes with the [http://www.fsharpworkshop.com/](http://www.fsharpworkshop.com/) exercices in the ~/fsharpworkshop folder, not a part of the Little ML'er workshop, but an excellent workshop if you want to learn more about F#. The Little ML'er focuses more on types and not so much on the other aspects of the language.
+The box also comes with the [http://www.fsharpworkshop.com/](http://www.fsharpworkshop.com/) exercises in the ~/fsharpworkshop folder, not a part of the Little ML'er workshop, but an excellent workshop if you want to learn more about F#. The Little ML'er focuses more on types and not so much on the other aspects of the language.
 
 ## Intro
 
