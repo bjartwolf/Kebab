@@ -4,8 +4,6 @@ The Visual Studio Code (VSCode) version of the original [Kebab workshop](https:/
 Little ML'er in F# - a workshop.
 The reason for its name might become more clear if you do some of the exercises and/or read the book.
 
-Used for workshops at flatMap(Oslo) and some universities and meetups...
-
 The exercises are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
@@ -13,7 +11,7 @@ http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 # Setup
 
-The workshop will be given i Visual Studio Code, but the exercises will work in both Visual Studio and MonoDevelop as well.
+The workshop will be given i Visual Studio Code.
 
 ## TODO Using the Virtual Machine
 
@@ -36,14 +34,6 @@ If you experience this, include the following in your VS Code settings file:
 
     "terminal.integrated.flowControl": false
 
-# Exercises
+# Assignments
 
-The box also comes with the [http://www.fsharpworkshop.com/](http://www.fsharpworkshop.com/) exercises in the ~/fsharpworkshop folder, not a part of the Little ML'er workshop, but an excellent workshop if you want to learn more about F#. The Little ML'er focuses more on types and not so much on the other aspects of the language.
-
-## Intro
-
-Open the intro solution. This part is just scripts and is meant to be evaluated and played with in FSI. Send a line to FSI using CTRL+ENTER in MonoDevelop. There is no feedback on right and wrong, ask an instructor or ask @jonaswinje, @einarwh or @bjartnes or someone else on Twitter if  you are not sure, or create a GitHub issue or something. The assignments are a bit open on purpose. We want you to play with the concepts.
-
-## Trees
-
-This solution is a bit more like a traditional .NET project and is compiled and tested either using the build-script or using CTRL+T in MonoDevelop to run tests. It includes property-based testing and more complex types.
+The scripts in the assignments folder is meant to be evaluated and played with in FSI. Send a line to FSI using alt + enter in VSCode. There is no feedback on right and wrong, ask an instructor or ask @jonaswinje or @_teodoran or someone else on Twitter if  you are not sure, or create a GitHub issue or something. The assignments are a bit open on purpose. We want you to play with the concepts.
