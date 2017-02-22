@@ -17,9 +17,9 @@ The workshop will be given i Visual Studio Code.
 
 The simplest way to get started with the workshop, is to use the pre-prepared virtual machine.
 
-The workshop is distributed in a 32-bit Ubuntu VM OWA 1.0 format, that can be imported into VirtualBox: 
-* The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova).
-* The password and username is **smarf** and **smarf**.
+The workshop is distributed as a 64-bit Ubuntu ISO disk image, that can be imported into VirtualBox: 
+* The VM can be downloaded from [TODO](TODO).
+* The password and username is **kebab** and **kebab**.
 * If the machine runs slow, or Mono autocompletion is slow, try to allocate more CPUs, RAM, Video RAM etc to the machine. Maybe it helps.
  
 ## Manual Setup
