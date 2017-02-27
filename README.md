@@ -11,17 +11,16 @@ http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 # Setup
 
-The workshop will be given i Visual Studio Code.
+The workshop will be given i Visual Studio Code using the Ionide plugin.
 
-## TODO Using the Virtual Machine
+## Using the Virtual Machine
 
 The simplest way to get started with the workshop, is to use the pre-prepared virtual machine.
+A pre-prepared virtual machine for VirtualBox based on Lubuntu will be available as a handout at the beginning of the workshop.
 
-The workshop is distributed as a 64-bit Ubuntu ISO disk image, that can be imported into VirtualBox: 
-* The VM can be downloaded from [TODO](TODO).
-* The password and username is **kebab** and **kebab**.
-* If the machine runs slow, or Mono autocompletion is slow, try to allocate more CPUs, RAM, Video RAM etc to the machine. Maybe it helps.
- 
+If you're not attending the workshop, or your convictions prevent you from using virtualization technology,
+we recommend following the manual setup guide. 
+
 ## Manual Setup
 
 If you don't want to use a virtual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
@@ -32,7 +31,28 @@ Follow the F# Software Foundation's installation guide for [linux](http://fsharp
 Ionide has a known bug, that can cause weird output in the F# terminal on some installations.
 If you experience this, include the following in your VS Code settings file:
 
+```
+{
     "terminal.integrated.flowControl": false
+}
+```
+
+You can open the settings-file by pressing Ctrl + Shift + P and writing Open User Settings.
+
+### Love those custom keybindings?
+
+If you want to move the cursor to the fsi-repl in VSCode without using a pointer device, you'll need a custom keybinding.
+Press Ctrl + K, Ctrl + S to open the user keybindings and enter the following to bind Ctrl + 4 to go to fsi-repl.
+
+```
+[
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    }
+]
+```
 
 # Assignments
 
