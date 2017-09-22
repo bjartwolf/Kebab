@@ -28,13 +28,13 @@ let t = ()
 *)
 
 let queens n =
-    let invalidPosition (x1, y1) (x2, y2) = (wa t) // todo
-    let validSolution (queen, board) = not (Seq.exists (invalidPosition queen) board)
+  let invalidPosition (x1, y1) (x2, y2) = (wa t) // todo
+  let validSolution (queen, board) = not (Seq.exists (invalidPosition queen) board)
 
-    let newBoards y board : (int * int) list seq = (wa t) // todo
+  let newBoards y board : (int * int) list seq = (wa t) // todo
 
-    let allNewBoards boards y = Seq.collect (newBoards y) boards
-    Seq.fold allNewBoards (Seq.singleton []) (seq { 1 .. n })
+  let allNewBoards boards y = Seq.collect (newBoards y) boards
+  Seq.fold allNewBoards (Seq.singleton []) (seq { 1 .. n })
 
 queens 4
 

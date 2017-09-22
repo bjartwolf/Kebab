@@ -19,9 +19,9 @@ Plate Apple
 Plate Mutton
 
 let isBeef f =
-    match f with
-        | Plate Beef -> true
-        | Plate Mutton -> false
+  match f with
+  | Plate Beef -> true
+  | Plate Mutton -> false
 
 isBeef (Plate Beef)
 

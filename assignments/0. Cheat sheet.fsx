@@ -76,15 +76,15 @@ let aTuple = (2, "hello")
 // we pattern match do deal with the more interesting types
 let glorp x =
   match x with
-    | (num, str) -> String.replicate num str
+  | (num, str) -> String.replicate num str
 
 glorp aTuple
 glorp (3, "hi")
 
 // discriminated unions, or tagged unions, or sums
 // (we can read | as "or")
-type Shape
-  = Square of float
+type Shape =
+  | Square of float
   | Rectangle of float * float
   | Circle of float
 
@@ -95,9 +95,9 @@ let anOtterShape = Circle 4.7
 // pattern matching on discriminated unions lets us case analysis
 let area x =
   match x with
-    | Square side -> side * side
-    | Rectangle (width, height) -> width * height
-    | Circle radius -> radius * System.Math.PI * System.Math.PI
+  | Square side -> side * side
+  | Rectangle (width, height) -> width * height
+  | Circle radius -> radius * System.Math.PI * System.Math.PI
 
 area aShape
 area anotherShape

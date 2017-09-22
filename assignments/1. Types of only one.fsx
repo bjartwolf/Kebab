@@ -18,8 +18,9 @@ salts
 
 
 // A function from salt is roughly as interesting as the type
-let salty s = match s with
-                  | Salt -> true
+let salty s =
+  match s with
+  | Salt -> true
 
 salty Salt
 
