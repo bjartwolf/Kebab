@@ -1,35 +1,59 @@
-# Kebab
+# Kebabs with VSCode
+The Visual Studio Code (VSCode) version of the original [Kebab workshop](https://github.com/bjartwolf/Kebab)
+
 Little ML'er in F# - a workshop.
-The reason for its name might become more clear if you do some of the exercices and/or read the book.
+The reason for its name might become more clear if you do some of the exercises and/or read the book.
 
-Used for workshops at flatMap(Oslo) and some universities and meetups...
-
-The exercies are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
+The exercises are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 ![image](https://mitpress.mit.edu/sites/default/files/9780262561143.jpg)
 
 # Setup
 
-The assignments are designed to work both in Visual Studio and MonoDevelop.
+The workshop will be given i Visual Studio Code using the Ionide plugin.
 
-The workshop is distributed in a 32-bit Ubuntu VM OWA 1.0 format, that can be imported into VirtualBox: 
-* The VM can be downloaded from [http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova](http://virtualmachinesshare.blob.core.windows.net/virtualmachines/smarf.ova).
-* The password and username is **smarf** and **smarf**.
-* If the machine runs slow, or Mono autocompletion is slow, try to allocate more CPUs, RAM, Video RAM etc to the machine. Maybe it helps.
- 
-Or, if you have your own Ubuntu or similar, you can try to set it up [like so](ubuntu-setup.md).
+## Using the Virtual Machine
 
-Or if you have a Visual Studio, can probably open solution files in there.
+The simplest way to get started with the workshop, is to use the pre-prepared virtual machine.
+A pre-prepared virtual machine for VirtualBox based on Lubuntu will be available as a handout at the beginning of the workshop.
 
-# Exercises
+If you're not attending the workshop, or your convictions prevent you from using virtualization technology,
+we recommend following the manual setup guide. 
 
-The box also comes with the [http://www.fsharpworkshop.com/](http://www.fsharpworkshop.com/) exercices in the ~/fsharpworkshop folder, not a part of the Little ML'er workshop, but an excellent workshop if you want to learn more about F#. The Little ML'er focuses more on types and not so much on the other aspects of the language.
+## Manual Setup
 
-## Intro
+If you don't want to use a virtual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
+Follow the F# Software Foundation's installation guide for [linux](http://fsharp.org/use/linux/), [mac](http://fsharp.org/use/mac/) or [windows](http://fsharp.org/use/windows/).
 
-Open the intro solution. This part is just scripts and is meant to be evaluated and played with in FSI. Send a line to FSI using CTRL+ENTER in MonoDevelop. There is no feedback on right and wrong, ask an instructor or ask @jonaswinje, @einarwh or @bjartnes or someone else on Twitter if  you are not sure, or create a GitHub issue or something. The assignments are a bit open on purpose. We want you to play with the concepts.
+### Getting wierd F#-output in VSCode?
 
-## Trees
+Ionide has a known bug, that can cause weird output in the F# terminal on some installations.
+If you experience this, include the following in your VS Code settings file:
 
-This solution is a bit more like a traditional .NET project and is compiled and tested either using the build-script or using CTRL+T in MonoDevelop to run tests. It includes property-based testing and more complex types.
+```
+{
+    "terminal.integrated.flowControl": false
+}
+```
+
+You can open the settings-file by pressing Ctrl + Shift + P and writing Open User Settings.
+
+### Love those custom keybindings?
+
+If you want to move the cursor to the fsi-repl in VSCode without using a pointer device, you'll need a custom keybinding.
+Press Ctrl + K, Ctrl + S to open the user keybindings and enter the following to bind Ctrl + 4 to go to fsi-repl.
+
+```
+[
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    }
+]
+```
+
+# Assignments
+
+The scripts in the assignments folder is meant to be evaluated and played with in FSI. Send a line to FSI using alt + enter in VSCode. There is no feedback on right and wrong, ask an instructor or ask @jonaswinje or @_teodoran or someone else on Twitter if  you are not sure, or create a GitHub issue or something. The assignments are a bit open on purpose. We want you to play with the concepts.
