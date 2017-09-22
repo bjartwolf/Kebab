@@ -90,7 +90,7 @@ type Shape
 
 let aShape = Square 5.0
 let anotherShape = Rectangle (3.2, 7.0)
-let aThirdShape = Circle 4.7
+let anOtterShape = Circle 4.7
 
 // pattern matching on discriminated unions lets us case analysis
 let area x =
@@ -101,5 +101,5 @@ let area x =
 
 area aShape
 area anotherShape
-area aThirdShape
+area anOtterShape
 
