@@ -19,7 +19,7 @@ let t = ()
 
 let goldbach n : int * int = 
   let isPrime n : bool = wa t
-  let rec findPrimeTuple d  : int * int = wa t
+  let rec findPrimeTuple d : int * int = wa t
   findPrimeTuple 2
 
 goldbach 28
