@@ -26,7 +26,7 @@ we recommend following the manual setup guide.
 If you don't want to use a virtual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
 Follow the F# Software Foundation's installation guide for [linux](http://fsharp.org/use/linux/), [mac](http://fsharp.org/use/mac/) or [windows](http://fsharp.org/use/windows/).
 
-### Getting wierd F#-output in VSCode?
+### Getting weird F#-output in VSCode?
 
 Ionide has a known bug, that can cause weird output in the F# terminal on some installations.
 If you experience this, include the following in your VS Code settings file:
