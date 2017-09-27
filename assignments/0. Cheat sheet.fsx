@@ -103,3 +103,40 @@ area aShape
 area anotherShape
 area anOtterShape
 
+
+
+
+// *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+// *~*~*~*~* Other  Things *~*~*~*~*
+// *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+// one other thing is a lists
+
+// you make lists with
+// either, the empty list:
+[]
+
+// or, by "consing" (with ::) an element onto a list
+1 :: []
+
+1 :: 2 :: []
+
+// there's syntactic sugar for making lists with several elements
+[1; 2]
+
+// it's like, the same list
+1 :: 2 :: [] = [1; 2]
+
+// standard lib comes with useful things to do to lists
+List.map (fun x -> x + x) [3; 1; 5; 0]
+
+List.map area [aShape; anotherShape; anOtterShape]
+
+List.filter (fun x -> x > 2) [3; 1; 5; 0]
+
+List.fold (fun res x -> res + x) 0 [1; 2; 3; 4; 5]
+
+// and stuff...
+
+// also there are other other things. sets, maps, arrays, ...
+// those exist. (mostly elsewhere.)
