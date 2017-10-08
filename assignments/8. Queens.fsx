@@ -25,6 +25,13 @@ let t = ()
     make new boards by adding queens to different rows in the y column
       (i.e. by making new (x, y)-tuples for possible positions for the new queen)
       and return the new boards that do not have any queens attacking each other
+
+
+  Some maybe useful functions:
+    abs : int -> int
+    Seq.map : ('a -> 'b) -> seq<'a> -> seq<'b>
+    Seq.filter : ('a -> bool) -> seq<'a> -> seq<'a>
+  (a seq is a lot like a stream, a little like a lis)
 *)
 
 let queens n =
