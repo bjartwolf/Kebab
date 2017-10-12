@@ -1,5 +1,4 @@
-# Kebabs with VSCode
-The Visual Studio Code (VSCode) version of the original [Kebab workshop](https://github.com/bjartwolf/Kebab)
+# Kebabs
 
 Little ML'er in F# - a workshop.
 The reason for its name might become more clear if you do some of the exercises and/or read the book.
