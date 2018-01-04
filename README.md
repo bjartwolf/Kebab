@@ -45,10 +45,17 @@ Press Ctrl + K, Ctrl + S to open the user keybindings and enter the following to
 ]
 ```
 
-### Property based assignments 
-They require paket to install FSCheck. https://github.com/ionide/ionide-vscode-paket
+## Property based assignments 
+These can be run either in
+### FSI
+This requires mono to run, which can be setup on linux and mac. 
 
+They require paket to install FSCheck. https://github.com/ionide/ionide-vscode-paket
 Run > Paket:install  (CTRL+SHIFT+P   Paket install) to install required depedencies.
+
+### Using Expecto
+Use (CTRL+SHIFT+P) and Expecto: Run to build and run the property based tests in dotnet core.
+This requires only dotnetcore to run, and should be multiplatform.
 
 # Assignments
 
