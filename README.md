@@ -12,17 +12,9 @@ http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
 The workshop will be given i Visual Studio Code using the Ionide plugin.
 
-## Using the Virtual Machine
-
-The simplest way to get started with the workshop, is to use the pre-prepared virtual machine.
-A pre-prepared virtual machine for VirtualBox based on Lubuntu will be available as a handout at the beginning of the workshop.
-
-If you're not attending the workshop, or your convictions prevent you from using virtualization technology,
-we recommend following the manual setup guide. 
-
 ## Manual Setup
 
-If you don't want to use a virtual machine, you'll need to get F#, Visual Studio Code and the Ionide plugin.
+You need to get F#, Visual Studio Code and the Ionide plugin.
 Follow the F# Software Foundation's installation guide for [linux](http://fsharp.org/use/linux/), [mac](http://fsharp.org/use/mac/) or [windows](http://fsharp.org/use/windows/).
 
 ### Getting weird F#-output in VSCode?
@@ -52,6 +44,11 @@ Press Ctrl + K, Ctrl + S to open the user keybindings and enter the following to
     }
 ]
 ```
+
+### Property based assignments 
+They require paket to install FSCheck. https://github.com/ionide/ionide-vscode-paket
+
+Run > Paket:install  (CTRL+SHIFT+P   Paket install) to install required depedencies.
 
 # Assignments
 
