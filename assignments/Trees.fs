@@ -1,7 +1,4 @@
-#I @"..\packages\FsCheck\lib\net452"
-#r "FsCheck.dll"
-
-open FsCheck
+module Trees
 
 type fruit =
     Fig
@@ -44,28 +41,3 @@ let rec eatPear tree =
                                 | Some (Pear) -> LeftFruit (None, eatPear t)
                                 | f -> LeftFruit (f, eatPear t)
        | Split (t1, t2) -> Split (eatPear t1, eatPear t2)
-
-let revRevIsOrig (xs:list<int>) = List.rev(List.rev xs) = xs
-
-
-let ``Doubleflipped trees are equal to themselves`` (t: tree) =
-    flip (flip t) = t
-
-let ``Flipped unsymmetric tree is different from self`` () =
-    let tree = LeftFruit(Some Pear, Bud)
-    not(flip tree = tree)
-
-
-let ``Flipped bud is equal to self`` () =
-    flip Bud = Bud
-
-let ``Eating pears does not change a tree if it doesn't have pears`` (t: tree) =
-    if (hasPear t) then not (eatPear t = t) else eatPear t = t
-
-let ``Flipped unsymmetric tree is not equal to self`` (f: fruit) =
-    let t = LeftFruit (Some f, Bud)
-    not (t = flip t)
-
-
-Check.Quick  ``Flipped unsymmetric tree is not equal to self``
-Check.Quick ``Eating pears does not change a tree if it doesn't have pears``
