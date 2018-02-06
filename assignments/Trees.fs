@@ -35,8 +35,8 @@ let rec eatPear tree =
     match tree with
        | Bud -> Bud
        | RightFruit(t, f) -> match f with
-                                | Some (Pear) -> RightFruit (eatPear t, None)
-                                | f -> RightFruit (eatPear t, f)
+                                | Some (Pear) -> RightFruit (t, None)
+                                | f -> RightFruit (t, f)
        | LeftFruit(f, t) -> match f with
                                 | Some (Pear) -> LeftFruit (None, eatPear t)
                                 | f -> LeftFruit (f, eatPear t)
