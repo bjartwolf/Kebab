@@ -6,7 +6,7 @@ The reason for its name might become more clear if you do some of the exercises 
 The exercises are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
 http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
 
-![image]([https://mitpress.mit.edu/sites/default/files/9780262561143.jpg](https://m.media-amazon.com/images/I/51s4p7t9llL._SY445_SX342_.jpg))
+![image](https://m.media-amazon.com/images/I/51s4p7t9llL._SY445_SX342_.jpg)
 
 # Setup
 
