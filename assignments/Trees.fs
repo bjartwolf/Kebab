@@ -18,7 +18,7 @@ let rec flip tree =
        | Bud -> Bud
        | RightFruit(t, f) -> LeftFruit(f, flip(t))
        | LeftFruit(f, t) -> RightFruit(flip(t), f)
-       | Split (t1, t2) -> Split (flip(t2), flip(t1))
+       | Split (t1, t2) -> Split (flip(t1), flip(t2))
 
 let rec hasPear tree =
     match tree with

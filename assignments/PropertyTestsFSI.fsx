@@ -1,5 +1,5 @@
-#I @"..\packages\FsCheck\lib\net452"
-#r "FsCheck.dll"
+#load @"./../.paket/load/net9.0/fscheck.fsx"
+
 #load "Trees.fs"
 #load "TreeTests.fs"
 

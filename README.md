@@ -1,10 +1,16 @@
 # Kebabs
 
+```
+dotnet new tool-manifest
+dotnet tool install paket
+dotnet tool restore
+```
+
 Little ML'er in F# - a workshop.
 The reason for its name might become more clear if you do some of the exercises and/or read the book.
 
-The exercises are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations. 
-http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X
+The exercises are based on this book, you should buy it if you are interested in knowing more about this and getting the proper explanations.
+<http://www.amazon.com/The-Little-MLer-Matthias-Felleisen/dp/026256114X>
 
 ![image](https://m.media-amazon.com/images/I/51s4p7t9llL._SY445_SX342_.jpg)
 
@@ -45,15 +51,19 @@ Press Ctrl + K, Ctrl + S to open the user keybindings and enter the following to
 ]
 ```
 
-## Property based assignments 
-These can be run either in
-### FSI
-This requires mono to run, which can be setup on linux and mac. 
+## Property based assignments
 
-They require paket to install FSCheck. https://github.com/ionide/ionide-vscode-paket
+These can be run either in
+
+### FSI
+
+This requires mono to run, which can be setup on linux and mac.
+
+They require paket to install FSCheck. <https://github.com/ionide/ionide-vscode-paket>
 Run > Paket:install  (CTRL+SHIFT+P   Paket install) to install required depedencies.
 
 ### Using Expecto
+
 Use (CTRL+SHIFT+P) and Expecto: Run to build and run the property based tests in dotnet core.
 This requires only dotnetcore to run, and should be multiplatform.
 
