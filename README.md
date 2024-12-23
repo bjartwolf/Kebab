@@ -3,6 +3,8 @@
 ```
 dotnet tool restore
 dotnet paket install
+dotnet paket generate-load-scripts
+
 ```
 
 Little ML'er in F# - a workshop.
