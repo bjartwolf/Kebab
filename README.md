@@ -4,6 +4,7 @@
 dotnet new tool-manifest
 dotnet tool install paket
 dotnet tool restore
+dotnet paket generate-load-scripts
 ```
 
 Little ML'er in F# - a workshop.
